@@ -42,7 +42,7 @@
     "start": "node server.js",
     "build": "rm -rf dist && webpack --config webpack.config.js",
     "heroku-prebuild": "yarn install --production=false",
-    "heroku-postbuild": "yarn && yarn build"
+    "heroku-postbuild": "yarn build"
   },
   "engines": {
     "node": "10.20",
