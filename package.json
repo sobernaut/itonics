@@ -39,7 +39,6 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open --hot",
-    "build": "webpack --mode production",
     "heroku-postbuild": "yarn && yarn build"
   }
 }
