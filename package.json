@@ -38,7 +38,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --hot",
+    "start:dev": "webpack-dev-server --open --hot",
+    "start": "node server.js",
     "build": "webpack --mode production",
     "heroku-postbuild": "yarn && yarn build"
   }
