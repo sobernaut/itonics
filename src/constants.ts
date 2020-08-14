@@ -28,3 +28,5 @@ export const NORMALIZED_TEAM = TEAMS.reduce((res, team) => {
 }, { byId: {}, allIds: [] });
 
 export const TEAM_OPTIONS = TEAMS.map(team => ({ label: team.name, value: team.id }));
+
+export const STATE_KEY = 'itonic_league_redux'
