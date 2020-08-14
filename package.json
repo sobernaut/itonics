@@ -40,7 +40,7 @@
   "scripts": {
     "start:dev": "webpack-dev-server --open --hot",
     "start": "node server.js",
-    "build": "webpack --mode production",
+    "build": "NODE_ENV=production webpack --config webpack.config.js",
     "heroku-postbuild": "yarn && yarn build"
   },
   "engines": {
