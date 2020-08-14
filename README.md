@@ -1,5 +1,5 @@
-# cookbook
-Itonics FootBall League
+# Itonics FootBall League
+
 
 ## Running
 1. Install project dependencies
