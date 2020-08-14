@@ -23,7 +23,7 @@ export default function ResultsList() {
       <div className="filters">
         <div>
           <p className="filter_title">Sort By Date</p>
-          <div className="filter--sort">
+          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <SortButton value={sortOrder} onChange={setSortOrder} id={ASCENDING} label="ASC" />
             <SortButton value={sortOrder} onChange={setSortOrder} id={DESCENDING} label="DESC" />
           </div>
@@ -31,7 +31,7 @@ export default function ResultsList() {
         <div>
           <p className="filter_title">Sort By Team</p>
           <SelectInpt value={selectedTeam} onChange={(_, team) => setSelectedTeam(team)} options={TEAM_OPTIONS} />
-          <div className="fillter--team-reset" onClick={() => selectedTeam && setSelectedTeam(undefined)}>
+          <div style={{ position: 'absolute' }} onClick={() => selectedTeam && setSelectedTeam(undefined)}>
             {`${selectedTeam ? 'Reset Team' : ''}`}
           </div>
         </div>
